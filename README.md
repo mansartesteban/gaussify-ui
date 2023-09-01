@@ -21,8 +21,7 @@ The result could be something like this :
 
 > Values will be approximated in these exemples as i do it by head
 
-LINEAR (min: 1, max: 50, steps: 6) =>
-
+LINEAR (min: 1, max: 50, steps: 6) :
 - .m-1 { margin: 1px ;}
 - .m-2 { margin: 10px ;}
 - .m-3 { margin: 20px ;}
@@ -30,8 +29,7 @@ LINEAR (min: 1, max: 50, steps: 6) =>
 - .m-5 { margin: 40px ;}
 - .m-6 { margin: 50px ;}
 
-FIBONACCI (min: 1, max: 55, steps: 9) =>
-
+FIBONACCI (min: 1, max: 55, steps: 9) :
 - .m-1 { margin: 1px ;}
 - .m-2 { margin: 2px ;}
 - .m-3 { margin: 3px ;}
@@ -42,8 +40,7 @@ FIBONACCI (min: 1, max: 55, steps: 9) =>
 - .m-8 { margin: 34px ;}
 - .m-9 { margin: 55px ;}
 
-FIBONACCI (min: 1, max: 26, steps: 10) =>
-
+FIBONACCI (min: 1, max: 26, steps: 10) :
 - .m-1 { margin: 1px ;}
 - .m-2 { margin: 2px ;}
 - .m-3 { margin: 4px ;}
