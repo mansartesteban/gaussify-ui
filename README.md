@@ -5,7 +5,8 @@ This repo is for the moment a POC and a sandbox
 # Presentation
 
 Gaussify UI is a fully customizable UI Framework made with Sass. I know, you probably think "yet another UI Framework" and ... uh ... that's correct except that uh ... no, everyone says that !
-The two main concepts of this framework are :
+
+So let's dive into the main purpose of Gaussify UI Framework, the two main concepts of this framework are :
 
 ## Fully customisable
 
