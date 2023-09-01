@@ -22,32 +22,35 @@ The result could be something like this :
 > Values will be approximated in these exemples as i do it by head
 
 LINEAR (min: 1, max: 50, steps: 6) =>
-.m-1 { margin: 1px ;}
-.m-2 { margin: 10px ;}
-.m-3 { margin: 20px ;}
-.m-4 { margin: 30px ;}
-.m-5 { margin: 40px ;}
-.m-6 { margin: 50px ;}
+
+- .m-1 { margin: 1px ;}
+- .m-2 { margin: 10px ;}
+- .m-3 { margin: 20px ;}
+- .m-4 { margin: 30px ;}
+- .m-5 { margin: 40px ;}
+- .m-6 { margin: 50px ;}
 
 FIBONACCI (min: 1, max: 55, steps: 9) =>
-.m-1 { margin: 1px ;}
-.m-2 { margin: 2px ;}
-.m-3 { margin: 3px ;}
-.m-4 { margin: 5px ;}
-.m-5 { margin: 8px ;}
-.m-6 { margin: 13px ;}
-.m-7 { margin: 21px ;}
-.m-8 { margin: 34px ;}
-.m-9 { margin: 55px ;}
+
+- .m-1 { margin: 1px ;}
+- .m-2 { margin: 2px ;}
+- .m-3 { margin: 3px ;}
+- .m-4 { margin: 5px ;}
+- .m-5 { margin: 8px ;}
+- .m-6 { margin: 13px ;}
+- .m-7 { margin: 21px ;}
+- .m-8 { margin: 34px ;}
+- .m-9 { margin: 55px ;}
 
 FIBONACCI (min: 1, max: 26, steps: 10) =>
-.m-1 { margin: 1px ;}
-.m-2 { margin: 2px ;}
-.m-3 { margin: 4px ;}
-.m-4 { margin: 7px ;}
-.m-5 { margin: 11px ;}
-.m-6 { margin: 16px ;}
-.m-7 { margin: 20px ;}
-.m-8 { margin: 23px ;}
-.m-9 { margin: 25px ;}
-.m-10 { margin: 26px ;}
+
+- .m-1 { margin: 1px ;}
+- .m-2 { margin: 2px ;}
+- .m-3 { margin: 4px ;}
+- .m-4 { margin: 7px ;}
+- .m-5 { margin: 11px ;}
+- .m-6 { margin: 16px ;}
+- .m-7 { margin: 20px ;}
+- .m-8 { margin: 23px ;}
+- .m-9 { margin: 25px ;}
+- .m-10 { margin: 26px ;}
