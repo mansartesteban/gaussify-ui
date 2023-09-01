@@ -1,0 +1,39 @@
+
+@use "sass:map";
+
+$c-borderRadius-min: $mainMin !default;
+$c-borderRadius-max: $mainMax !default;
+$c-borderRadius-steps: $mainSteps !default;
+$c-borderRadius-unit: $mainUnit !default;
+$c-borderRadius-rule: $mainRule !default;
+
+$borderRadiusClasses: (
+    "min": $c-borderRadius-min,
+    "max": $c-borderRadius-max,
+    "steps": $c-borderRadius-steps,
+    "unit": $c-borderRadius-unit,
+    "rule": $c-borderRadius-rule,
+);
+
+:root {
+    --c-borderRadius-min: #{$c-borderRadius-min};
+    --c-borderRadius-max: #{$c-borderRadius-max};
+    --c-borderRadius-steps: #{$c-borderRadius-steps};
+    --c-borderRadius-unit: #{$c-borderRadius-unit};
+    --c-borderRadius-rule: #{$c-borderRadius-rule};
+}
+
+$sizes: createMap($borderRadiusClasses);
+    
+@each $size in $sizes { 
+    $i: index($sizes, $size);
+
+    // Positive margins
+    .border-radius-#{$i} {
+        border-radius: $size + map.get($borderRadiusClasses, "unit")
+    }
+
+    .border-radius-0 {
+        border-radius: 0;
+    }
+}

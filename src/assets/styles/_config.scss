@@ -1,0 +1,22 @@
+// May affects global app performances
+// If too low, will affects results
+// If too high, will affects performances
+// Should ideally be between 16 and 28 and have to be even number
+/**
+    The number of loops it takes to calculate exponential with approxiamtive exponential function, based on Taylor Series algebric form
+    https://en.wikipedia.org/wiki/Taylor_series
+*/
+$expFuncPrecisionIterations: 18;
+
+
+$mainMin: .1;
+$mainMax: 10;
+$mainSteps: 20;
+$mainUnit: rem;
+$mainRule: "gaussian"; // Accepted values : "fibonacci", "gaussian", "linear", "square"
+
+
+
+
+$mainFontSize: 14px;
+$mainFont: Pitagon, Poppins, Montserrat, Arial;

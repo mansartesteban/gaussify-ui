@@ -1,0 +1,14 @@
+:root {
+    --card--border-radius: 16px;
+    --card--elevation: var(--elevation-3);
+    --card--background-color: white;
+}
+
+.card {
+    border-radius: var(--card--border-radius);
+    box-shadow: var(--card--elevation);
+    background-color: var(--card--background-color);
+
+    padding: var(--margin-md);
+    margin: var(--margin-md);
+}

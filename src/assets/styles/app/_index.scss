@@ -1,0 +1,11 @@
+@use "sass:map";
+
+@import "./functions";
+
+html,
+body {
+    font-family: $mainFont;
+    font-size: $mainFontSize;
+}
+
+

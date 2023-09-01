@@ -1,0 +1,40 @@
+
+@use "sass:map";
+
+$c-elevation-min:  $mainMin !default;
+$c-elevation-max: $mainMax !default;
+$c-elevation-steps: $mainSteps !default;
+$c-elevation-unit: $mainUnit !default;
+$c-elevation-rule: $mainRule !default;
+
+$elevationClasses: (
+    "min": $c-elevation-min,
+    "max": $c-elevation-max,
+    "steps": $c-elevation-steps,
+    "unit": $c-elevation-unit,
+    "rule": $c-elevation-rule,
+);
+
+:root {
+    --c-elevation-min: #{$c-elevation-min};
+    --c-elevation-max: #{$c-elevation-max};
+    --c-elevation-steps: #{$c-elevation-steps};
+    --c-elevation-unit: #{$c-elevation-unit};
+    --c-elevation-rule: #{$c-elevation-rule};
+}
+
+$sizes: createMap($elevationClasses);
+    
+@each $size in $sizes { 
+    $i: index($sizes, $size);
+
+    // Positive margins
+    .elevation-#{$i} {
+    box-shadow:  $size + map.get($elevationClasses, "unit") $size + map.get($elevationClasses, "unit") $size*2 + map.get($elevationClasses, "unit") rgba(0, 0, 0, .12),
+        0 0 $size + map.get($elevationClasses, "unit") rgba(0, 0, 0, .07);
+    }
+
+    .elevation-0 {
+        box-shadow: 0;
+    }
+}

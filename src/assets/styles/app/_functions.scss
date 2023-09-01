@@ -1,0 +1,25 @@
+@use "sass:map";
+
+@function createMap($classConfig) {
+
+
+    $min: map.get($classConfig, "min");
+    $max: map.get($classConfig, "max");
+    $steps: map.get($classConfig, "steps");
+    $rule: map.get($classConfig, "rule");
+
+    $sizes: null;
+    @if ($rule == "gaussian") {
+        $sizes: gaussian($min, $max, $steps);
+    } @else {
+        $sizes: linear($min, $max, $steps);
+    }
+    @return $sizes;
+};
+
+@function mapset($map, $key, $value) {
+  $new: (
+    $key: $value,
+  );
+  @return map.merge($map, $new);
+}
