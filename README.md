@@ -40,7 +40,7 @@ FIBONACCI (min: 1, max: 55, steps: 9) :
 - .m-8 { margin: 34px ;}
 - .m-9 { margin: 55px ;}
 
-FIBONACCI (min: 1, max: 26, steps: 10) :
+BEZIER (min: 1, max: 26, steps: 10) :
 - .m-1 { margin: 1px ;}
 - .m-2 { margin: 2px ;}
 - .m-3 { margin: 4px ;}
